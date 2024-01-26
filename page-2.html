@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Title of the document -->
+    <title>Styled Layout with Images</title>
+</head>
+<style>
+    /* Custom styling for specific elements */
+    .container-fluid {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container-fluid .row .col-6 {
+        border-left: 3px solid rgb(157, 158, 158);
+        background-color: rgb(202, 252, 210);
+        max-height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container-fluid .row .col-3 {
+        background-color: rgb(241, 245, 188);
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container-fluid .row .col-3 > p {
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <!-- Main Content Section -->
+    <div class="container-fluid mt-3">
+        <!-- Row with three columns -->
+        <div class="row">
+            <!-- First Column -->
+            <div class="col-3">
+                <!-- Labels for images -->
+                <p>First image</p>
+                <p>Second image</p>
+                <p>Third image</p>
+            </div>
+
+            <!-- Second Column with Images -->
+            <div class="col-3">
+                <!-- Image 1 -->
+                <img src="/CSS/css-ex/download (1).jpg" alt="" class="img-fluid mb-3">
+                <!-- Image 2 -->
+                <img src="/CSS/css-ex/images (1).jpg" alt="" class="img-fluid mb-3">
+                <!-- Image 3 -->
+                <img src="/CSS/css-ex/istockphoto-1204528107-170667a.webp" alt="" class="img-fluid">
+            </div>
+
+            <!-- Third Column with Text Content -->
+            <div class="col-6 ">
+                <!-- Heading -->
+                <h1>Hello</h1>
+                <!-- Paragraph with Lorem Ipsum text -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam, harum voluptatem obcaecati id earum pariatur laudantium? Odio, mollitia error! Voluptas, amet aliquid possimus esse dicta corporis debitis? Delectus, ab.
+                Expedita rem nam corrupti rerum unde eum ratione illum porro deserunt maiores commodi dolor ut dolorum culpa dicta numquam, vel, est neque eligendi blanditiis repellendus, praesentium ad. Ipsam, dicta nisi?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
